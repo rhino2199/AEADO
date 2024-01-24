@@ -48,7 +48,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'custom'
-    projects: '**/net8.0/AutomationExercise.dll'
+    projects: '**/net8.0/AEADO.dll'
     custom: 'vstest'
     arguments: '--logger:trx;logfilename=TEST.xml'
 - task: PublishTestResults@2
